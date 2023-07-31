@@ -1,0 +1,173 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: url("../image/unsplash.jpg");
+  background-size: contain;
+  background-repeat: repeat;
+
+  /* background: linear-gradient(
+    to left bottom,
+    hsla(164, 61%, 63%, 0.401),
+    rgba(0, 0, 0, 0.332),
+    rgba(255, 0, 0, 0.302),
+    hsla(164, 61%, 63%, 0.401),
+    lightblue,
+    rgba(255, 0, 0, 0.356)
+  ); */
+  width: 100vw;
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+
+  position: fixed;
+}
+
+.brand {
+  /* background: cadetblue; */
+  font-size: 2rem;
+  font-weight: bold;
+  margin-left: 25px;
+}
+.coll {
+  color: rgb(237, 225, 6);
+  /* background-color: dimgray; */
+  margin: 0;
+}
+.album {
+  /* background-color: rgb(2, 88, 91); */
+  color: goldenrod;
+  margin: 0;
+}
+
+/* Homepage Styles */
+.homepage {
+  color: rgb(243, 214, 53);
+}
+
+/* Menu Styles */
+#menu {
+  padding: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+#menu button {
+  background-color: black;
+  color: goldenrod;
+  font-family: Verdana, Geneva, sans-serif;
+  font-weight: 180;
+  font-variant: initial;
+  border-radius: 36px;
+  padding: 5px 16px;
+  margin-right: 20px;
+  border: none;
+  cursor: pointer;
+}
+#menu input[type="text"] {
+  padding: 5px;
+  border: #f44336;
+  margin-right: 15px;
+}
+
+/* Content Styles */
+/* #content {
+  align-items: center;
+  padding: 20px;
+  color: rgb(4, 2, 2);
+  background-color: white;
+
+  border-radius: 30px;
+}
+/* Movie List Styles */
+
+/* Movie List Styles */
+
+/* Style for the container holding the movie cards */
+/* CSS for the content area */
+#content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#result {
+  color: #fff;
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.movie {
+  width: 200px;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.movie img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.movie p {
+  margin: 18px 0;
+  font-size: 14px;
+  text-align: center;
+  color: aliceblue;
+}
+#movie {
+  height: 800px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#movie .poster {
+  max-width: 300px;
+  height: auto;
+  float: left;
+  margin-right: 20px;
+  color: #fff;
+}
+
+/* CSS for the favorite and remove buttons */
+button {
+  padding: 8px 12px;
+  margin: 3px;
+
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button.active {
+  background-color: #28a745;
+}
+
+/* Optional: CSS for the search input */
+/* #searchInput {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 100%;
+  margin-bottom: 10px;
+  font-size: 16px;
+} */

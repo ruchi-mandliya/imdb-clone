@@ -1,0 +1,85 @@
+/* styles.css */
+
+/* Basic styling */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background: url("../image/unsplash.jpg");
+  background-size: contain;
+  background-repeat: repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Ensures the content is centered vertically */
+}
+
+.container {
+  max-width: 960px;
+  max-height: 900px;
+  display: flex;
+  flex-direction: column; /* Align the movie details container vertically */
+  align-items: center; /* Align the movie details container horizontally */
+  background-color: rgba(255, 255, 255, 0.9); /* Adjust the background color */
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+/* Movie details styling */
+#movie1 {
+  background-color: hwb(0 100% 0% / 0.747);
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(189, 173, 173, 0.898);
+  padding: 20px;
+  margin-top: 20px;
+}
+
+#movie1 .poster {
+  max-width: 300px;
+  height: auto;
+  float: left;
+  margin-right: 20px;
+}
+
+#movie1 h2 {
+  margin-top: 0;
+}
+
+#movie1 p {
+  margin-bottom: 10px;
+}
+
+/* Additional movie details styling */
+#movie1 .title {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #007bff; /* Blue color for the movie title */
+}
+
+#movie .genre,
+#movie .writer,
+#movie .actors,
+#movie .plot,
+#movie .language {
+  margin-top: 10px;
+
+  color: rgb(
+    0,
+    0,
+    0
+  ); /* Dark gray color for genre, writer, actors, plot, and language */
+}
+
+#movie1 .awards {
+  margin-top: 10px;
+  color: #6a5acd; /* Purple color for the awards */
+  font-weight: bold; /* Bold text for awards */
+}
+
+/* FontAwesome icons */
+#movie1 .fa-award {
+  margin-right: 5px;
+  color: #6a5acd; /* Purple color for the FontAwesome award icon */
+}

@@ -1,0 +1,77 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .active {
+        background-color: yellow;
+      }
+    </style>
+    <link
+      rel="shortcut icon"
+      href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="container">
+    <div
+      class="top"
+      style="
+        background: linear-gradient(to left bottom, lightblue, black, black);
+      "
+    >
+      <div class="brand">
+        <span class="album">IMDB</span>
+        <span class="coll">Clone</span>
+      </div>
+
+      <div id="menu">
+        <button onclick="showHomePage()" style="font-size: 2.2rem">
+          <i class="fa-solid fa-house"></i>
+        </button>
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Search Movies"
+          style="
+            width: 300px;
+            height: 42px;
+            border-radius: 15px;
+            margin-top: 5px;
+          "
+        />
+        <button
+          onclick="searchMovies()"
+          style="
+            position: absolute;
+            right: 95;
+            font-size: 1.2rem;
+            font-weight: 900;
+            background-color: inherit;
+            padding-bottom: 5px;
+          "
+        >
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+        <button onclick="showFavorites()">
+          <span
+            style="
+              font-size: 2.2rem;
+              /* background-color: red; */
+              color: red;
+              border-radius: 100px;
+            "
+            ><i class="fa-solid fa-heart"></i
+          ></span>
+        </button>
+      </div>
+    </div>
+
+    <h2 id="result"></h2>
+
+    <div id="content"></div>
+    <div id="movie"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <script src="script1.js"></script>
+  </body>
+</html>
