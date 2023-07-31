@@ -23,8 +23,10 @@ fetch(`https://www.omdbapi.com/?i=${id}&apikey=${API_KEY}`)
        
         <p class = "language"><b>Language:</b> ${movie.Language}</p>
         <p class = "awards"><b><i class = "fas fa-award"></i></b> ${movie.Awards}</p>
+
        
       </div>
+      
     `;
   });
 

@@ -104,8 +104,7 @@ function showFavorites() {
       
     `;
       contentDiv.appendChild(div);
-      const favoriteBtn = createFavoriteButton(movie.imdbID);
-      div.appendChild(favoriteBtn);
+
       const removeBtn = createRemoveButton(movie.imdbID);
       div.appendChild(removeBtn);
       contentDiv.appendChild(div);
@@ -199,7 +198,8 @@ function createRemoveButton(imdbID) {
   const button = document.createElement("button");
   button.innerText = "Remove from Favorites";
 
-  button.addEventListener("click", () => {
+  button.addEventListener("click", (e) => {
+    e.stopPropagation();
     // Retrieve favorite movies from local storage
     let favorites = JSON.parse(localStorage.getItem("favorites")) || [];
 
